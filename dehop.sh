@@ -15,6 +15,7 @@ echo "Gnome (1)"
 echo "KDE (2)"
 echo "i3 (3)"
 echo "Budgie (4)"
+echo "Openbox (5)"
 echo "Choice:   "
 read dist
 
@@ -30,6 +31,9 @@ then
 elif [ "$dist" -eq "4" ]
 then
 	dist="Budgie"
+elif [ "$dist" -eq "5" ]
+then
+    dist="Openbox"
 else
 	echo "No valid DE selected"
 	exit
